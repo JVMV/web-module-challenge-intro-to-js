@@ -20,7 +20,7 @@ Do the following:
    HINT: no function required
 */
 const votingAge = 21;
-console.log(votingAge > 18);
+console.log(votingAge >= 18);
 
 
 /*
@@ -37,7 +37,7 @@ Do the following:
 let firstThing = 20;
 let secondThing = 20;
 if(firstThing === secondThing) {
-  firstThing + 1;
+  firstThing++;
   console.log(firstThing);
 };
 
@@ -54,7 +54,7 @@ Do the following:
 
    HINT: look up the Number method
 */
-let year = "1990";
+let year = "1999";
 let number = parseInt(year, 10);
 console.log(number);
 
