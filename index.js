@@ -151,12 +151,12 @@ function hungryDog(weight, age){
     }
   }
   if(age < 1) {
-    if(weight <= .33) {
-      return weight * .10;
-    } else if(weight <= .58) {
-      return weight * .05;
+    if(age <= .333) {
+      return weight * .100;
+    } else if(age <= .583) {
+      return weight * .050;
     } else {
-      return weight * .04;
+      return weight * .040;
     }
     }
   };
@@ -222,10 +222,9 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
-}
-
+function miles(km){
+  return km * .621371;
+};
 
 
 //Task 5b - Feet to CM
@@ -236,10 +235,9 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
-}
-
+function feet(cm){
+  return cm / 30.48;
+};
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
