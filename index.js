@@ -151,9 +151,9 @@ function hungryDog(weight, age){
     }
   }
   if(age < 1) {
-    if(weight > .16 && weight < .33) {
-      return weight * .1;
-    } else if(weight > .33 && weight < .58) {
+    if(weight <= .33) {
+      return weight * .10;
+    } else if(weight <= .58) {
       return weight * .05;
     } else {
       return weight * .04;
@@ -183,10 +183,31 @@ Use the game function below to do the following:
 
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
+function ranNum(min, max) {
+  number = Math.random() * (max - min) + min;
+  if(number === 1) {
+    return 'rock';
+  } else if(number === 2) {
+    return 'paper';
+  } else {
+    return 'scissors';
+  };
+};
+
+let computer = '';
+computer = ranNum(1, 3);
 
 function game(user, computer){
-  /*add your code here*/
-}
+  if(user === computer) {
+    return "it's a tie";
+  } else if(user === 'rock' && computer === 'paper' || user === 'paper' && computer === 'scissors' || user === 'scissors' && computer === 'rock') {
+    return 'you lose!';
+  } else if(user === 'rock' && computer === 'scissors' || user === 'paper' && computer === 'rock' || user === 'scissors' && computer === 'paper') {
+    return 'you win!';
+  } else {
+    return 'Choose rock, paper, or scissors.';
+  }
+};
 
 
 
