@@ -314,15 +314,21 @@ HINT - try looking up the .includes() method
 
 
 function vowelCounter(str) {
+  if(str.includes('a', 'e', 'i', 'o', 'u')) {
   let vowels = str.match(/[aeiou]/ig);
   console.log('There are ' + vowels.length + ' vowels in this string.');
+} else {
+  console.log('There are no vowels in this sting.')
 }
+};
 
 //Created String
 let aStr = 'This is a random string that I thought of right now. Pretty simple, right?';
+let noVowels = 'bcdfghjklmnpqrstvwxyz'
 
 //Example
 vowelCounter(aStr);
+vowelCounter(noVowels);
 
 
 
