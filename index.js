@@ -258,7 +258,7 @@ function annoyingSong(annNum){
 return annNum + " bottles of soda on the wall, " + annNum + " bottles of soda, take one down pass it around " + (annNum - 1) + " bottles of soda on the wall"
 };
 
-for(let i = 0; i > 1; i--) {
+for(let i = 0; i > 0; i--) {
   console.log(annoyingSong(i));
   i--;
 };
@@ -312,8 +312,8 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+function vowelCounter(str) {
+  return str.includes('a', 'e', 'i', 'o', 'u');
 }
 
 
